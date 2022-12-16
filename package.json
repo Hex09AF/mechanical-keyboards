@@ -1,0 +1,15 @@
+{
+  "name": "mechanical-keyboard",
+  "source": "src/index.html",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0"
+  },
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3"
+  }
+}
