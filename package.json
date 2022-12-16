@@ -9,8 +9,8 @@
   },
   "scripts": {
     "clean:output": "rimraf dist",
-    "start": "npm run clean:output && parcel src/index.html",
-    "build": "npm run clean:output && parcel build src/index.html"
+    "start": "npm run clean:output && parcel src/index.html --public-url /",
+    "build": "npm run clean:output && parcel build src/index.html --public-url ./"
   },
   "dependencies": {
     "gsap": "^3.11.3"
