@@ -1,13 +1,16 @@
 {
   "name": "mechanical-keyboard",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
-    "parcel": "^2.8.0"
+    "parcel": "^2.8.0",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
-    "dev": "parcel",
-    "build": "parcel build src/index.html"
+    "clean:output": "rimraf dist",
+    "start": "npm run clean:output && parcel src/index.html",
+    "build": "npm run clean:output && parcel build src/index.html"
   },
   "dependencies": {
     "gsap": "^3.11.3"
